@@ -294,8 +294,7 @@ public class Main {
                     if (moveScore > bestScore) {// change the max score
                         bestMove = Integer.parseInt(original); // saves the move
                         bestScore = moveScore;
-                    }
-                }
+                    }}
             }
         }
         if(returnMove){
@@ -313,10 +312,8 @@ public class Main {
                     for (int j = 0; j < 3; j++) {
                         if(board[i][j].matches("[1-9]")){
                             return Integer.parseInt(board[i][j]); // return the first legal move
-                        }
-                    }
-                }
-            }
+                        }}
+                }}
         }
         return move;
     }
@@ -403,4 +400,5 @@ public class Main {
             System.out.println("game is a tie!!");
         }else  System.out.println("you lost!!");
     }
+
 }
